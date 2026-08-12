@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Contacta con GuitarJon mediante nuestro formulario."
+  >
+
+  <title>Contacto | GuitarJon</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+  <h1>🎸 GuitarJon</h1>
+
+  <nav aria-label="Menú principal">
+
+    <a href="index.html">
+      Inicio
+    </a>
+
+    <a href="quienes-somos.html">
+      Quiénes Somos
+    </a>
+
+    <a href="servicios.html">
+      Nuestros Servicios
+    </a>
+
+    <a
+      href="contacto.html"
+      class="activo"
+    >
+      Contacto
+    </a>
+
+  </nav>
+
+
+  <button
+    type="button"
+    class="btn-nav"
+    id="btnTema"
+  >
+    ☀️
+  </button>
+
+
+  <button
+    type="button"
+    id="btnCarrito"
+    class="btn-carrito"
+  >
+
+    🛒
+
+    <span
+      id="badgeCarrito"
+      class="badge-carrito"
+      hidden
+    >
+      0
+    </span>
+
+  </button>
+
+</header>
+
+
+
+<main class="pagina">
+
+
+  <section class="hero">
+
+    <h2>
+      Contacto
+    </h2>
+
+    <p>
+      ¿Tienes alguna pregunta? Escríbenos.
+    </p>
+
+  </section>
+
+
+
+  <section class="contacto-container">
+
+
+    <form
+      id="formContacto"
+      class="formulario"
+      novalidate
+    >
+
+      <label for="nombre">
+        Nombre
+      </label>
+
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Tu nombre"
+        required
+      >
+
+
+      <label for="correo">
+        Correo electrónico
+      </label>
+
+      <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="ejemplo@correo.com"
+        required
+      >
+
+
+      <label for="mensaje">
+        Mensaje
+      </label>
+
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="6"
+        placeholder="Escribe tu mensaje..."
+        required
+      ></textarea>
+
+
+      <button
+        type="submit"
+      >
+        Enviar mensaje 📩
+      </button>
+
+    </form>
+
+
+  </section>
+
+
+</main>
+
+
+
+<aside
+  class="carrito"
+  id="carrito"
+  aria-hidden="true"
+>
+
+  <button
+    type="button"
+    id="btnCerrarCarrito"
+    class="btn-cerrar-carrito"
+  >
+    ×
+  </button>
+
+  <h2>
+    🛒 Carrito
+  </h2>
+
+  <ul id="lista"></ul>
+
+  <h3>
+    Total: $<span id="total">0</span>
+  </h3>
+
+  <button
+    type="button"
+    onclick="pagar()"
+  >
+    Pagar 💳
+  </button>
+
+</aside>
+
+
+<div
+  id="carritoBackdrop"
+  class="carrito-backdrop"
+  hidden
+></div>
+
+
+
+<footer class="footer">
+
+  <p>
+    GuitarJon - Proyecto de Jon
+  </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

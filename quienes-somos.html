@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Conoce la historia, misión, visión y valores de GuitarJon."
+  >
+
+  <title>Quiénes Somos | GuitarJon</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+  <h1>🎸 GuitarJon</h1>
+
+  <nav aria-label="Menú principal">
+
+    <a href="index.html">
+      Inicio
+    </a>
+
+    <a
+      href="quienes-somos.html"
+      class="activo"
+    >
+      Quiénes Somos
+    </a>
+
+    <a href="servicios.html">
+      Nuestros Servicios
+    </a>
+
+    <a href="contacto.html">
+      Contacto
+    </a>
+
+  </nav>
+
+
+  <button
+    type="button"
+    class="btn-nav"
+    id="btnTema"
+  >
+    ☀️
+  </button>
+
+
+  <button
+    type="button"
+    id="btnCarrito"
+    class="btn-carrito"
+  >
+
+    🛒
+
+    <span
+      id="badgeCarrito"
+      class="badge-carrito"
+      hidden
+    >
+      0
+    </span>
+
+  </button>
+
+</header>
+
+
+
+<main class="pagina">
+
+
+  <section class="hero">
+
+    <h2>
+      ¿Quiénes Somos?
+    </h2>
+
+    <p>
+      GuitarJon es un proyecto dedicado al mundo
+      de la guitarra y el equipo musical.
+    </p>
+
+  </section>
+
+
+
+  <section class="info-grid">
+
+
+    <article class="info-card">
+
+      <div class="servicio-icono">
+        🎯
+      </div>
+
+      <h3>
+        Misión
+      </h3>
+
+      <p>
+        Ofrecer productos y orientación de calidad
+        para ayudar a músicos a encontrar el equipo
+        adecuado para desarrollar su sonido.
+      </p>
+
+    </article>
+
+
+
+    <article class="info-card">
+
+      <div class="servicio-icono">
+        🔭
+      </div>
+
+      <h3>
+        Visión
+      </h3>
+
+      <p>
+        Convertirnos en una tienda reconocida por
+        nuestra atención, variedad de productos y
+        pasión por la música.
+      </p>
+
+    </article>
+
+
+
+    <article class="info-card">
+
+      <div class="servicio-icono">
+        ❤️
+      </div>
+
+      <h3>
+        Valores
+      </h3>
+
+      <p>
+        Pasión por la música, responsabilidad,
+        honestidad, innovación y atención al cliente.
+      </p>
+
+    </article>
+
+
+
+    <article class="info-card">
+
+      <div class="servicio-icono">
+        📖
+      </div>
+
+      <h3>
+        Nuestra Historia
+      </h3>
+
+      <p>
+        GuitarJon nació como un proyecto enfocado
+        en compartir la pasión por las guitarras,
+        los pedales y la tecnología musical.
+      </p>
+
+    </article>
+
+
+  </section>
+
+
+</main>
+
+
+
+<aside
+  class="carrito"
+  id="carrito"
+  aria-hidden="true"
+>
+
+  <button
+    type="button"
+    id="btnCerrarCarrito"
+    class="btn-cerrar-carrito"
+  >
+    ×
+  </button>
+
+  <h2>
+    🛒 Carrito
+  </h2>
+
+  <ul id="lista"></ul>
+
+  <h3>
+    Total: $<span id="total">0</span>
+  </h3>
+
+  <button
+    type="button"
+    onclick="pagar()"
+  >
+    Pagar 💳
+  </button>
+
+</aside>
+
+
+<div
+  id="carritoBackdrop"
+  class="carrito-backdrop"
+  hidden
+></div>
+
+
+
+<footer class="footer">
+
+  <p>
+    GuitarJon - Proyecto de Jon
+  </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
